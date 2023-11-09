@@ -1,0 +1,70 @@
+.Service-Email {
+  width: 100%;
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    padding: 30px 0;
+    box-sizing: border-box;
+  }
+
+  .cat-img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+  }
+
+  .service-introduce-container {
+    position: relative;
+    width: 530px;
+    height: 100%;
+    margin: 0;
+    // background-image: url(../../assets/images/illustration.png);
+    box-sizing: border-box;
+
+    .title {
+      margin: 0;
+      color: #222222;
+      font-size: 60px;
+      line-height: 72px;
+      font-family: var(--font-family-special);
+    }
+
+    .sub-title {
+      margin: 20px 0;
+      color: #222222;
+    }
+  }
+
+  .write-message-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+
+    input,
+    textarea {
+      margin-bottom: 20px;
+      padding: 14px 12px;
+      border: 1px solid #b9b9b9;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .send-message-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 20px 30px;
+      color: #f2f2f2;
+      font-size: 28px;
+      line-height: 42px;
+      border-radius: 100px;
+      background: var(--main-color);
+      box-sizing: border-box;
+    }
+  }
+}
