@@ -5,7 +5,7 @@ import "./NewestActivity.scss";
 
 function NewestActivity() {
   return (
-    <div className="Newest-Activity">
+    <div className="Newest-Activity" id="activity">
       <div className="container">
         <p className="title">最新活動</p>
         <div className="activity-container">

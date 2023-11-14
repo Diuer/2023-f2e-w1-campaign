@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
+    // overflow: hidden;
   }
 
   .main-section {
@@ -58,6 +59,8 @@
     font-family: var(--font-family-special);
     -webkit-text-stroke: 2px #fafafa;
     -webkit-text-fill-color: transparent;
+
+    transform: translateX(100vw);
   }
 
   .text-vertical {
@@ -70,6 +73,8 @@
     writing-mode: vertical-rl;
     font-size: 140px;
     font-family: var(--font-family-special);
+
+    transform: translateY(100vh);
   }
 
   .political-opinions-container {

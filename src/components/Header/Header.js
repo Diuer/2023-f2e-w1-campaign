@@ -1,18 +1,48 @@
+import { useEffect, useState } from "react";
+import cn from "clsx";
+
 import LogoImg from "../../assets/images/logo.png";
+
+import { MENU_LIST } from "../../constants/menu";
 
 import "./Header.scss";
 
 function Header() {
+  const [activeHash, setActiveHash] = useState(
+    window.location.hash || MENU_LIST[0].link
+  );
+
+  useEffect(() => {
+    const onChangeHash = () => {
+      setActiveHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", onChangeHash);
+
+    return () => window.removeEventListener("hashchange", onChangeHash);
+  }, []);
+
   return (
     <div className="Header">
       <div className="container">
-        <img src={LogoImg} alt="logo" />
+        <a href="/#">
+          <img src={LogoImg} alt="logo" />
+        </a>
         <ul>
-          <li>候選人主張</li>
-          <li>最新活動</li>
-          <li>政策議題</li>
-          <li>民眾服務信箱</li>
-          <li className="highlight">小額捐款</li>
+          {MENU_LIST.map((item) => (
+            <li
+              key={item.link}
+              className={cn({
+                highlight: item.isHighlight,
+                active: activeHash === item.link,
+              })}>
+              <a href={item.link}>
+                {item.ComponentBefore && item.ComponentBefore}
+                {item.title}
+                {item.ComponentAfter && item.ComponentAfter}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

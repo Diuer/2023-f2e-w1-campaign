@@ -4,7 +4,7 @@
   height: 100px;
   top: 0;
   background: #ffffff;
-  z-index: 999;
+  z-index: 990;
 
   .container {
     display: flex;
@@ -15,21 +15,54 @@
 
   ul {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     list-style: none;
 
     li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      top: -10px;
       margin: 0 25px;
+      padding: 10px 0;
       font-size: 20px;
       font-weight: 700;
       cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: all 0.5s;
+      box-sizing: border-box;
+
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+
+      &:hover {
+        border-bottom: 3px solid rgba(69, 39, 160, 0.3);
+      }
+
+      &.active {
+        border-bottom: 3px solid var(--main-color);
+        transition: all 0.5s;
+      }
 
       &.highlight {
+        top: 0;
         padding: 10px 20px;
-        color: #ffffff;
         border-radius: 30px;
+        border: 0;
         background: var(--main-color);
         box-sizing: border-box;
+
+        a {
+          display: flex;
+          align-items: center;
+          color: #ffffff;
+        }
+      }
+
+      .icon {
+        margin-right: 10px;
       }
     }
   }

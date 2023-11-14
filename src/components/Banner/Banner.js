@@ -1,11 +1,41 @@
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SloganImg from "../../assets/images/slogan.png";
 import CandidateImg from "../../assets/images/candidate.png";
 
 import "./Banner.scss";
+import { useEffect } from "react";
 
 function Banner() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const textVertical = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".Header", // 決定scrolltrigger要以哪一個元素作為觸發基準點
+        markers: false, // 開啟start & end標記點，單純方便瀏覽動畫開始與結束點
+        start: "0 top", // 決定動畫開始點的位置
+        // pin: true,
+        scrub: false, // 物件動畫根據卷軸捲動程度跑
+        duration: 0.1,
+      },
+    });
+
+    textVertical
+      .to(".text-vertical", {
+        transform: "translateY(0)",
+      })
+      .to(
+        ".text-horizontal",
+        {
+          transform: "translateX(0)",
+        },
+        "<"
+      );
+  }, []);
+
   return (
-    <div className="Banner">
+    <div className="Banner" id="candidate">
       <div className="container">
         <div className="main-section">
           <p className="sub-title">2023 THE F2E 立委競選</p>

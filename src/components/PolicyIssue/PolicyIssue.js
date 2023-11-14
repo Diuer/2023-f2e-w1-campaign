@@ -2,7 +2,7 @@ import "./PolicyIssue.scss";
 
 function PolicyIssue() {
   return (
-    <div className="Policy-Issue">
+    <div className="Policy-Issue" id="policy">
       <div className="container">
         <p className="title">政策議題</p>
         <div className="issue-container">
@@ -39,6 +39,8 @@ function PolicyIssue() {
               <li>
                 推廣寵物友善商家：鼓勵商家提供寵物友善的環境，並為參與的商家提供稅收優惠。預計在政策實施後的首年，將有超過
                 500 家商家加入此計畫
+              </li>
+              <li>
                 舉辦寵物活動和工作坊：與各大寵物社團和組織合作，每年舉辦至少 5
                 場大型的寵物活動，包括寵物才藝比賽、飼養知識工作坊等
               </li>

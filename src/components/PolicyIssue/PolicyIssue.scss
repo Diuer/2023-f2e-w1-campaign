@@ -25,10 +25,12 @@
 
     .issue-item {
       width: calc((100% - 60px) / 3);
+      height: 366px;
       padding: 15px;
       text-align: left;
       border-radius: 8px;
       background: #ffffff;
+      overflow: hidden;
       box-sizing: border-box;
 
       &-serial {
@@ -38,21 +40,47 @@
         border-radius: 8px 0 8px 0;
         color: #ffffff;
         background: var(--secondary-color-1);
+        transition: 0.5s;
         box-sizing: border-box;
       }
 
       &-title {
+        position: relative;
         margin: 0 0 10px 0;
         font-size: 24px;
         line-height: 36px;
         font-weight: 700;
+        transition: 0.5s;
       }
 
       &-description {
+        position: relative;
         margin: 0;
         padding-left: 20px;
         font-size: 16px;
         line-height: 24px;
+        transition: 0.5s;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        overflow-y: hidden;
+      }
+
+      &:hover {
+        .issue-item-serial {
+          opacity: 0;
+        }
+
+        .issue-item-title {
+          transform: translateY(-38px);
+        }
+
+        .issue-item-description {
+          display: block;
+          transform: translateY(-38px);
+        }
       }
     }
   }

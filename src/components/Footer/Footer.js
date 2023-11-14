@@ -1,4 +1,5 @@
 import LogoImg from "../../assets/images/logo-white.png";
+import { MENU_LIST } from "../../constants/menu";
 
 import "./Footer.scss";
 
@@ -14,14 +15,26 @@ function Footer() {
             <p className="list-title">Menu</p>
             <div className="list-container">
               <ul className="list-group">
-                <li>首頁</li>
-                <li>最新活動</li>
-                <li>民眾服務信箱</li>
+                <li>
+                  <a href="/#">首頁</a>
+                </li>
+                <li>
+                  <a href={MENU_LIST[1].link}>最新活動</a>
+                </li>
+                <li>
+                  <a href={MENU_LIST[3].link}>民眾服務信箱</a>
+                </li>
               </ul>
               <ul className="list-group">
-                <li>候選人主張</li>
-                <li>政策議題</li>
-                <li>小額捐款</li>
+                <li>
+                  <a href={MENU_LIST[0].link}>候選人主張</a>
+                </li>
+                <li>
+                  <a href={MENU_LIST[2].link}>政策議題</a>
+                </li>
+                <li>
+                  <a href={MENU_LIST[4].link}>小額捐款</a>
+                </li>
               </ul>
             </div>
           </div>
