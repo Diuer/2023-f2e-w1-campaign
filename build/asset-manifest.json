@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/2023-f2e-w1-campaign/static/css/main.f2975fcc.css",
+    "main.js": "/2023-f2e-w1-campaign/static/js/main.9cb8e5ad.js",
+    "static/js/787.dfb9a19c.chunk.js": "/2023-f2e-w1-campaign/static/js/787.dfb9a19c.chunk.js",
+    "static/media/NotoSansTC-Light.ttf": "/2023-f2e-w1-campaign/static/media/NotoSansTC-Light.30ff4ec76f62c272f579.ttf",
+    "static/media/NotoSansTC-Regular.ttf": "/2023-f2e-w1-campaign/static/media/NotoSansTC-Regular.d85aa51d9a2de01f56b9.ttf",
+    "static/media/NotoSansTC-Medium.ttf": "/2023-f2e-w1-campaign/static/media/NotoSansTC-Medium.606e090b80b0b57c843c.ttf",
+    "static/media/NotoSansTC-Bold.ttf": "/2023-f2e-w1-campaign/static/media/NotoSansTC-Bold.999e82458139273a2cff.ttf",
+    "static/media/block-background.png": "/2023-f2e-w1-campaign/static/media/block-background.3920cba92502afc65e6c.png",
+    "static/media/candidate.png": "/2023-f2e-w1-campaign/static/media/candidate.23ab07f1645c5f0c55e4.png",
+    "static/media/illustration.png": "/2023-f2e-w1-campaign/static/media/illustration.6687ec486229437d892e.png",
+    "static/media/activity-item-01.png": "/2023-f2e-w1-campaign/static/media/activity-item-01.a4650365ad2416f6adb3.png",
+    "static/media/activity-item-02.png": "/2023-f2e-w1-campaign/static/media/activity-item-02.f966a873ae8028d8ba29.png",
+    "static/media/activity-item-03.png": "/2023-f2e-w1-campaign/static/media/activity-item-03.1cc5982b4cc12dff9d76.png",
+    "index.html": "/2023-f2e-w1-campaign/index.html",
+    "main.f2975fcc.css.map": "/2023-f2e-w1-campaign/static/css/main.f2975fcc.css.map",
+    "main.9cb8e5ad.js.map": "/2023-f2e-w1-campaign/static/js/main.9cb8e5ad.js.map",
+    "787.dfb9a19c.chunk.js.map": "/2023-f2e-w1-campaign/static/js/787.dfb9a19c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2975fcc.css",
+    "static/js/main.9cb8e5ad.js"
+  ]
+}
