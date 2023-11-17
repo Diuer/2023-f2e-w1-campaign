@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/2023-f2e-w1-campaign/static/css/main.f2975fcc.css",
-    "main.js": "/2023-f2e-w1-campaign/static/js/main.9cb8e5ad.js",
+    "main.css": "/2023-f2e-w1-campaign/static/css/main.058dd441.css",
+    "main.js": "/2023-f2e-w1-campaign/static/js/main.892cdddc.js",
     "static/js/787.dfb9a19c.chunk.js": "/2023-f2e-w1-campaign/static/js/787.dfb9a19c.chunk.js",
     "static/media/NotoSansTC-Light.ttf": "/2023-f2e-w1-campaign/static/media/NotoSansTC-Light.30ff4ec76f62c272f579.ttf",
     "static/media/NotoSansTC-Regular.ttf": "/2023-f2e-w1-campaign/static/media/NotoSansTC-Regular.d85aa51d9a2de01f56b9.ttf",
@@ -13,13 +13,14 @@
     "static/media/activity-item-01.png": "/2023-f2e-w1-campaign/static/media/activity-item-01.a4650365ad2416f6adb3.png",
     "static/media/activity-item-02.png": "/2023-f2e-w1-campaign/static/media/activity-item-02.f966a873ae8028d8ba29.png",
     "static/media/activity-item-03.png": "/2023-f2e-w1-campaign/static/media/activity-item-03.1cc5982b4cc12dff9d76.png",
+    "static/media/coin.svg": "/2023-f2e-w1-campaign/static/media/coin.24728d5eb3d29c0114638644e79a317e.svg",
     "index.html": "/2023-f2e-w1-campaign/index.html",
-    "main.f2975fcc.css.map": "/2023-f2e-w1-campaign/static/css/main.f2975fcc.css.map",
-    "main.9cb8e5ad.js.map": "/2023-f2e-w1-campaign/static/js/main.9cb8e5ad.js.map",
+    "main.058dd441.css.map": "/2023-f2e-w1-campaign/static/css/main.058dd441.css.map",
+    "main.892cdddc.js.map": "/2023-f2e-w1-campaign/static/js/main.892cdddc.js.map",
     "787.dfb9a19c.chunk.js.map": "/2023-f2e-w1-campaign/static/js/787.dfb9a19c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2975fcc.css",
-    "static/js/main.9cb8e5ad.js"
+    "static/css/main.058dd441.css",
+    "static/js/main.892cdddc.js"
   ]
 }
