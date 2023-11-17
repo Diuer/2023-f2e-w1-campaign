@@ -1,8 +1,15 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 
   .container {
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+    }
   }
 }

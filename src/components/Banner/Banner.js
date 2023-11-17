@@ -1,10 +1,11 @@
+import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import SloganImg from "../../assets/images/slogan.png";
 import CandidateImg from "../../assets/images/candidate.png";
 
 import "./Banner.scss";
-import { useEffect } from "react";
 
 function Banner() {
   useEffect(() => {
@@ -47,9 +48,9 @@ function Banner() {
           <img className="slogan" src={SloganImg} alt="slogan" />
           <p className="text-horizontal">Miao Li-Han</p>
           <p className="text-vertical">喵立翰</p>
-          <img className="candidate" src={CandidateImg} alt="candidate" />
         </div>
         <div className="political-opinions-container">
+          <img className="candidate" src={CandidateImg} alt="candidate" />
           <h1 className="political-opinions-title">
             護航台灣幸福經濟 從照顧每一隻貓咪開始
           </h1>

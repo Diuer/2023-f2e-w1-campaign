@@ -1,4 +1,4 @@
-import CoinImg from "../assets/images/coin.png";
+import { ReactComponent as CoinSvg } from "../assets/images/coin.svg";
 
 export const MENU_LIST = [
   { link: "#candidate", title: "候選人主張", isHighlight: false },
@@ -9,6 +9,6 @@ export const MENU_LIST = [
     link: "#donate",
     title: "小額捐款",
     isHighlight: true,
-    ComponentBefore: <img className="icon" src={CoinImg} alt="icon" />,
+    ComponentBefore: <CoinSvg />,
   },
 ];

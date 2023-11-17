@@ -40,7 +40,9 @@
     position: absolute;
     top: 0;
     right: 80px;
+    right: 6%;
     width: 500px;
+    transform: translateY(-100%);
   }
 
   .slogan {
@@ -79,7 +81,8 @@
 
   .political-opinions-container {
     position: relative;
-    width: 1080px;
+    width: 90%;
+    max-width: 1080px;
     margin-top: 175px;
     margin-left: auto;
     padding: 50px;
@@ -98,5 +101,47 @@
   .political-opinions-description {
     margin: 0;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Banner {
+    .sub-title {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 19px;
+      font-size: 6vw;
+      line-height: 30px;
+      line-height: 10vw;
+    }
+
+    .main-title {
+      display: inline-block;
+      margin: 0 auto;
+      font-size: 46px;
+      font-size: 15vw;
+      line-height: 56px;
+      line-height: 19vw;
+    }
+
+    .text-horizontal {
+      font-size: 60px;
+      // font-size: 20vw;
+      line-height: 72px;
+      // line-height: 24vw;
+    }
+
+    .text-vertical {
+      display: none;
+    }
+
+    .candidate {
+      width: 245px;
+      right: 0;
+    }
+
+    .political-opinions-container {
+      border-width: 3px;
+    }
   }
 }
